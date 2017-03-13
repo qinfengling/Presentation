@@ -1,0 +1,79 @@
+(1 minute)
+Hello,Everyone.My name is 秦风岭 Qín fēng lǐng, you can call me Fengling or Mike for short. I will be giving a talk about the blockchain software in miner side. 
+This is the agenda, it includes 6 parts.
+Part 1. Introduce about me and our products.
+Part 2. What is the AvalonMiner Open Source Embedded System.
+Part 3. Contribute to the community and to Canaan.
+Part 4. Demo, How to use Avalon nano.
+Part 5. Q & A.
+
+(3 minutes)
+About me. 
+I am living in Beijing about 10 years now, so if you come to Beijing, let me know, Maybe I can help you. 
+
+My interests: Programming in Linux, I love open source projects include open source software and hardware
+You can contact with me through Email and Github. you can also follow me on Twitter.
+
+My experience:
+I start my embedded software work from 2008, in a Digtial Video Broadcast comany, then an IoT comany, and now a Blockchain company. I work as a senior software engineer for Canaan from 2014, start with Avalon 3. I wrote the AvalonMiner controller, AUC and MM firmware for Avalon Miner.
+
+This table is a brief introduction about the products we have made, you can find more in the Wikipedia - Canaan Creative. We start products from FPGA to ASICs. so you can see all of the major products. we have already made 6 ASIC processors and 7 generation products successfully. I give you some pictures about that. 
+Icarus, Lancelot, 1 gen, 2nd, 3rd, nano, 4th, mini, nano2, 6th, 7th. the latest we have made.
+
+(5 minutes)
+Ok, Let's talk about how to drive these products. we usually release one or more products every year, we need a very stable system to support it. and also the communicate protocol are also very important, for fast miner we use MM, and slow miner we use Icarus. We just talk about the fast miner system today. because we only use slow miners for some interests now. I will give a demo later about how to use the slow miner, like Avalon nano 2.
+First I will explain how the latest miner works.- Avalon Miner 741
+You can see the AvalonMiner controller, AUC, AvalonMiner 741. the firmware run on these devices.
+
+AvalonMiner Controller, we usually use a Raspberry Pi as the controller. it's OpenWrt based system. We use CGMiner to driver all the miners, mm-tools to upgrade the firmware for miners, and LuCI is a web ui for users.
+Some pictures about the web ui.
+
+AUC, Avalon USB Convert. it is a USB microprocessor, it is used to convert USB protocol to IIC, it is IIC master, so every AvalonMiner 741 is a IIC slave device.
+
+MM, Miner manager. It is a FPGA based device, It is a blockchain task generator. only support stratum protocal. It has been widely used in Avalon products now. From the architecture, we can see the Lattice Mico 32 CPU, and a lot of peripherals. for task generate, we use SHA-256 hardware, and for ASIC control, we use aLink.
+
+Then, I will show you how to generate the firmware easily.
+OpenWrt, Step by step. Automatically, 
+Dailybuild, you can always find the latest build here.
+Buildbot, you can see the build status in the web page.
+
+AUC, Step by step, 1, 2, 3
+
+MM, Step by step. install Xilinx ise, toolchain, compile
+and you can also find more detain through the link here.
+
+About the repository, you can find all the code here. for fast miner and slow miner.
+
+(2 minutes)
+Contribute
+What we have contribute to the community?
+CGMiner, OpenWrt
+
+We also support a lot of hardware in the build script.
+you can use any of these as a AvalonMiner controller.
+
+We keep update documents on some wikis.
+
+How to contritube the Canaan ?
+All the code was host on GitHub, just fork and pr on it.
+Never commit useless code. your feedback and new issues are all welcome.
+
+If you have great intests in BlockChain, just start from Bitcoin, Read the wiki, thread in the forum, join the irc channel, then the mastering Bitcoin is also very good way to start.
+
+(4 minutes)
+Demo
+I will send out 20 Avalon nano2 today, so I will give you a short demo about it in CGMiner and Chrome app.
+1st Chrome app
+1. Install Chrome app through app store or direct install from file.
+
+2. Plug the Avalon nano 2 in the usb adapter.
+
+2nd CGMiner way.
+1. git clone https://github.com/Canaan-Creative/cgminer
+2. git checkout origin/avalon4 -b avalon4
+	./autogen.sh --enable-avalon-miner
+3. sudo ./cgminer -o http://stratum.pool:3333 -u work -p pass
+
+OK, that is all. thank you.
+
+Q & A
