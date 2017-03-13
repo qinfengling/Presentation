@@ -14,6 +14,7 @@
     - [To Community](#to-community)
     - [To Canaan](#to-canaan)
 - [Demo (Avalon nano v2)](#demo-avalon-nano-v2)
+- [How to start ?](#how-to-start)
 - [Q&A](#q&a)
 
 Blockchain Software for Hardware: The Canaan AvalonMiner Open Source Embedded System
@@ -23,7 +24,7 @@ Blockchain Software for Hardware: The Canaan AvalonMiner Open Source Embedded Sy
 # Introduction
 <a class="mk-toclify" id="about-me"></a>
 ## About me
-- Name: 秦风岭（Fengling or Mike Qin）
+- Name: 秦风岭 Qín fēng lǐng（Fengling or Mike）
 - Location: Beijing
 - Interests: Linux, Open Source Projects(OSS and OSH)
 - Contacts: [GitHub](https://github.com/qinfengling), [Gmail](Fengling.Qin@gmail.com)
@@ -135,7 +136,7 @@ Note:
 	* Official
 
 		[Buildbot](http://build.canaan-creative.com:8010)
-		[Daily Build](http://build.canaan-creative.com:8080/~buildbot/)
+		[Daily Build](http://build.canaan-creative.com:8080/~buildbot/avalon7/openwrt/)
 
 <a class="mk-toclify" id="about-firmware-verison"></a>
 ## About Firmware verison
@@ -227,6 +228,12 @@ Note:
 - Mining with CGMiner
 
 - Mining with Chrome App
+
+<a class="mk-toclify" id="how-to-start"></a>
+# How to start ?
+- Wiki: http://en.bitcoin.it/wiki
+- Forum: http://bitcointalk.org
+- Book: Mastering Bitcoin.pdf
 
 <a class="mk-toclify" id="q&a"></a>
 # Q&A
