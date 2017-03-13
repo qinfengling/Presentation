@@ -30,8 +30,6 @@ Blockchain Software for Hardware: The Canaan AvalonMiner Open Source Embedded Sy
 - Contacts: [GitHub](https://github.com/qinfengling), [Gmail](Fengling.Qin@gmail.com)
 - Experience:
 
-		TODO: Some charts
-
 		2008 - 2013 Digital Video Broadcast
 		* Software Engineer
 		* GUI (Microwindows apps)
@@ -48,15 +46,19 @@ Blockchain Software for Hardware: The Canaan AvalonMiner Open Source Embedded Sy
 
 <a class="mk-toclify" id="products-we-made-from-icarus-to-avalon-miner"></a>
 ## Products we made  (From Icarus to Avalon Miner)
-|Period     |  Product           | ASIC   | Open Source | Image
-|-----------|--------------------|--------|-------------|------------------
-| 2013-2014 |[Avalon 3](https://en.bitcoin.it/wiki/Avalon3)           | A3233  | Full        | **TODO: picture**
-| 2014-2015 |[Avalon nano v1/v2](https://en.bitcoin.it/wiki/Avalon_nano)   | A3233  | Full        | **TODO: picture**
-| 2014-2015 |[Avalon 4](https://en.bitcoin.it/wiki/Avalon4)            | A3222  | Full        | **TODO: picture**
-| 2014-2015 |[Avalon 4 mini](https://en.bitcoin.it/wiki/Avalon4_mini)       | A3222  | Full        | **TODO: picture**
-| 2015-2015 |Avalon 5            | A3222  | -           | **TODO: picture**
-| 2015-2016 |[Avalon Miner 6](https://en.bitcoin.it/wiki/Avalon6)      | A3218  | Almost      | **TODO: picture**
-| 2016-2017 |[Avalon Miner 721](https://github.com/Canaan-Creative/avalon7-docs/wiki)    | A3212  | Almost      | **TODO: picture**
+|Period     |  Product           | ASIC   | Open Source | Protocol    |
+|-----------|--------------------|--------|-------------|-------------|
+| 2011-11   | [Icarus](http://en.qi-hardware.com/wiki/Icarus)             | FPGA   | Full      | Icarus
+| 2012-5    | [Lancelot](http://en.qi-hardware.com/wiki/Lancelot)           | FPGA   | Full      | Icarus
+| 2013-1    | [Avalon1](https://en.bitcoin.it/wiki/Avalon1)           | A3256  | Full      | Avalon
+| 2013-10   | [Avalon2](https://en.bitcoin.it/wiki/Avalon2)           | A3255  | Full      | MM
+| 2014-5  |[Avalon3](https://en.bitcoin.it/wiki/Avalon3)           | A3233  | Full | MM
+| 2014-8 |[Avalon nano](https://en.bitcoin.it/wiki/Avalon_nano)   | A3233  | Full | Icarus
+| 2014-10 |[Avalon4](https://en.bitcoin.it/wiki/Avalon4)            | A3222  | Full | MM
+| 2015-7 |[Avalon4 mini](https://en.bitcoin.it/wiki/Avalon4_mini)       | A3222  | Full | Icarus
+| 2015-8 |[Avalon nano2](https://en.bitcoin.it/wiki/Avalon_nano)   | A3233  | Full | Icarus
+| 2015-10 |[Avalon6](https://en.bitcoin.it/wiki/Avalon6)      | A3218  | Almost | MM
+| 2016-10 |[Avalon Miner 721](https://github.com/Canaan-Creative/avalon7-docs/wiki)    | A3212  | Almost | MM
 Note:
 
 1. Full means hardware design and software are all open source.
@@ -66,13 +68,13 @@ Note:
 # AvalonMiner Open Source Embedded System
 <a class="mk-toclify" id="connections"></a>
 ## Connections
-![Avalon Miner 721 Setup](./images/avalonminer-721-setup.png)
+![Avalon Miner 721 Setup](./images/avalonminer-741-setup.jpg)
 
 <a class="mk-toclify" id="embedded-system-parts"></a>
 ## Embedded System parts
 - AvalonMiner Controller:
 
-	TODO: Software Architecture
+	![Software Architecture](./images/software_arch.png)
 
 	* OpenWrt
 	* [cgminer-openwrt-packages (CGMiner + mm-tools)](https://github.com/Canaan-Creative/cgminer-openwrt-packages)
